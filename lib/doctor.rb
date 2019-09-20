@@ -20,7 +20,7 @@ class Doctor
   
   def appointments
     Appointment.all.select {|appointment| appointment.doctor == self}
-    binfing.pry
+    binding.pry
   end
   
   def patients
