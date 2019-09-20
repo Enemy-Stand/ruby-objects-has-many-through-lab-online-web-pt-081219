@@ -1,3 +1,5 @@
+require 'pry'
+
 class Doctor
   attr_accessor :name
   
@@ -18,6 +20,7 @@ class Doctor
   
   def appointments
     Appointment.all.select {|appointment| appointment.doctor == self}
+    binfing.pry
   end
   
   def patients
